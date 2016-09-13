@@ -1,6 +1,6 @@
 {
   "name": "astring-jsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "astring, with JSX support",
   "main": "index.js",
   "scripts": {

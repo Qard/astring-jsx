@@ -9,12 +9,12 @@
   "author": "Stephen Belanger <admin@stephenbelanger.com>",
   "license": "MIT",
   "dependencies": {
-    "astring": "^0.7.1",
+    "astring": "^1.0.5",
     "xtend": "^4.0.1"
   },
   "devDependencies": {
-    "acorn-jsx": "^3.0.1",
-    "tap": "^7.1.2"
+    "acorn-jsx": "^4.0.1",
+    "tap": "^10.7.2"
   },
   "repository": {
     "type": "git",

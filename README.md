@@ -1,5 +1,7 @@
 # astring-jsx
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/astring-jsx.svg)](https://greenkeeper.io/)
+
 This module wraps [astring](https://www.npmjs.com/package/astring) to provide
 support for JSX syntax.
 

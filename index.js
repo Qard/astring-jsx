@@ -68,6 +68,11 @@ var generator = Object.assign({
     this[node.expression.type](node.expression, state);
     output.write('}');
   },
+  // text
+  JSXText: function JSXExpressionContainer(node, state) {
+    var output = state.output;
+    output.write(node.value);
+  },
 }, astring.defaultGenerator);
 
 function astringJsx (ast, options) {
@@ -78,3 +83,4 @@ function astringJsx (ast, options) {
 
 astringJsx.generator = generator;
 module.exports = astringJsx;
+

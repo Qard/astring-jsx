@@ -51,9 +51,19 @@ var generator = Object.assign({
     var output = state;
     output.write(' ');
     this[node.name.type](node.name, state);
-    output.write('=');
-    this[node.value.type](node.value, state);
+
+    if(node.value !== null) {
+      output.write('=');
+      this[node.value.type](node.value, state);
+    }
   },
+
+  JSXSpreadAttribute: function JSXSpreadAttribute(node, state) {
+    state.write('  {...')
+    this[node.argument.type](node.argument, state);
+    state.write('}');
+  },
+
   // namespaced:attr="something"
   JSXNamespacedName: function JSXNamespacedName(node, state) {
     var output = state;
@@ -67,6 +77,10 @@ var generator = Object.assign({
     output.write('{');
     this[node.expression.type](node.expression, state);
     output.write('}');
+  },
+
+  JSXEmptyExpression: function JSXEmptyExpression(node, state) {
+
   },
 
   // text

@@ -7,6 +7,14 @@ support for JSX syntax.
 
 see: [astring](https://www.npmjs.com/package/astring)
 
+# Usage
+
+```javascript
+ const {JsxGenerator} = require("./astringJsx"); 
+ astring.generate(ast, {generator: JsxGenerator}) 
+
+```
+
 ---
 
 ### Copyright (c) 2016 Stephen Belanger

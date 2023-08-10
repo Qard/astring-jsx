@@ -69,6 +69,23 @@ var generator = Object.assign(
       this[node.expression.type](node.expression, state);
       output.write("}");
     },
+    JSXFragment: function JSXFragment(node, state) {
+      var output = state.output;
+      output.write("<>");
+      for (child of node.children) {
+        this[child.type](child, state);
+      }
+      output.write("</>");
+    },
+    // { }
+    JSXEmptyExpression: function JSXEmptyExpression() {
+      // do nothing
+      // a single or multiline comment in the expression will be ignores
+    },
+    JSXText: function JSXText(node, state) {
+      var output = state.output;
+      output.write(node.value);
+    },
   },
   astring.defaultGenerator
 );

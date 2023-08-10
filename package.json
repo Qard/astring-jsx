@@ -1,12 +1,16 @@
 {
-  "name": "astring-jsx",
+  "name": "@barelyhuman/astring-jsx",
   "version": "1.0.1",
   "description": "astring, with JSX support",
   "main": "index.js",
   "scripts": {
-    "test": "tap test.js"
+    "test": "tap test.js",
+    "next": "bumpp"
   },
   "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "contributors": [
+    "reaper <ahoy@barelyhuman.dev>"
+  ],
   "license": "MIT",
   "dependencies": {
     "astring": "^0.7.1",
@@ -14,14 +18,15 @@
   },
   "devDependencies": {
     "acorn-jsx": "^3.0.1",
+    "bumpp": "^9.1.1",
     "tap": "^7.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qard/astring-jsx.git"
+    "url": "git+https://github.com/barelyhuman/astring-jsx.git"
   },
   "bugs": {
-    "url": "https://github.com/Qard/astring-jsx/issues"
+    "url": "https://github.com/barelyhuman/astring-jsx/issues"
   },
-  "homepage": "https://github.com/Qard/astring-jsx#readme"
+  "homepage": "https://github.com/barelyhuman/astring-jsx#readme"
 }

@@ -7,6 +7,9 @@
     "test": "tap test.js",
     "next": "bumpp"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Stephen Belanger <admin@stephenbelanger.com>",
   "contributors": [
     "reaper <ahoy@barelyhuman.dev>"
